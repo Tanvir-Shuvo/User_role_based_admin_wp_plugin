@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name:       Custom Admin Panel - User Role Based Admin
+ * Plugin Name:       Custom Admin Panel-User Role Based Admin
  * Plugin URI:        https://rownakh8.sg-host.com/
  * Description:       User role based customizable admin panel
  * Version:           1.0.0
