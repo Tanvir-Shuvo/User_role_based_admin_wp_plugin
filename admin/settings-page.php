@@ -17,7 +17,7 @@ function user_based_admin_display_settings_page(){
     ?>
 
     <div class="plugin-setting-wrap">
-        <h1> <?php get_admin_page_title() ?> </h1>
+        <h1> <?php echo esc_html( get_admin_page_title() ); ?> </h1>
         <form action="options.php" method="post">
             
             <?php
