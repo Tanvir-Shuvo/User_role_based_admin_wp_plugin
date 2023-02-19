@@ -26,7 +26,7 @@ function user_based_admin_display_settings_page(){
             settings_fields("user_based_admin_options");
 
             // output setting sections
-            do_settings_sections("user_based_admin");
+            do_settings_sections("user-based-admin");
 
             // submit button
 			submit_button();
