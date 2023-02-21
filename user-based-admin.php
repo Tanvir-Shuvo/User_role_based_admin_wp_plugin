@@ -24,8 +24,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-
-
 // if admin area
 
 if(is_admin()){
@@ -37,3 +35,13 @@ if(is_admin()){
     require_once plugin_dir_path(__FILE__) . 'admin/settings_callback.php';
 
 }
+
+
+
+// admin area css enque 
+function user_based_admin_enqueue_admin_scripts() {
+    wp_enqueue_style( 'user-based-admin-css-style', plugin_dir_url( __FILE__ ) . 'admin/css/user-based-admin.css' );
+  }
+
+  add_action( 'admin_enqueue_scripts', 'user_based_admin_enqueue_admin_scripts' );
+

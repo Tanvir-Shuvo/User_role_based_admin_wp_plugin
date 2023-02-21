@@ -1,0 +1,30 @@
+/*plugin body*/
+
+.plugin-setting-wrap {
+  background-color: white;
+  padding: 20px 40px 100px 40px;
+}
+.plugin-setting-wrap h1 {
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+.plugin-setting-wrap form {
+  background: #f0f0f1;
+  padding: 10px 50px;
+}
+.plugin-setting-wrap form h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: blue;
+  margin: 0;
+  padding: 5px 0;
+}
+.plugin-setting-wrap form h3 {
+  margin: 20px 0 0 0;
+}
+.plugin-setting-wrap form .form-table {
+  margin: 10px 0 0 0;
+}

@@ -20,16 +20,28 @@ function user_based_admin_register_settings(){
 
     // Add a section to the settings page
     add_settings_section(
-        'user_based_admin_section_menu',  // ID of the settings section
-        esc_html( 'Customize Admin Menu', 'user-based-admin' ), // Title of the settings section, sanitized with esc_html()
-        'user_based_admin_section_callback', // Callback function to output the section's content
-        'user-based-admin'                // Slug of the settings page where this section should be displayed
+        'user_based_admin_section_menu',  // settings section ID
+        '<h2>' . esc_html( 'Display and Hide Your Admin Menu', 'user-based-admin' ) . '</h2>', // Title 
+        'user_based_admin_section_callback', // Callback function 
+        'user-based-admin' // Slug-menu slug
+    );
+    
+
+
+    // Menu Hide or display field
+    add_settings_field(
+        'hide-menu', // ID of the field
+        'Hide Your Menu', //Label for the field
+        'user_based_admin_yes_no_menu_checkbox_callback', // Callback function
+        'user-based-admin', // Slug-menu slug,
+        'user_based_admin_section_menu' // page Section
     );
 
 
 }
 
 add_action('admin_init','user_based_admin_register_settings');
+
 
 
 
